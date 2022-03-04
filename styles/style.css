@@ -1,0 +1,113 @@
+/* -------------------------------------------------- Primary  Style  -------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+:root{
+    --header-background:#2D25A0 ;
+    --button-background: #E02C6D;
+    --header-text: #FFFFFF;
+
+ 
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------
+                                                            Header Style
+ -------------------------------------------------------------------------------------------------------------------------------------- 
+ */
+
+/*------------------------------------------------------------- menu ----------------------------------------------------------*/
+header{
+    background:var(--header-background)
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  40px 124px 156px;
+}
+.menu-items ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+ .menu-items>ul>li a{
+     text-decoration: none;
+     color:  var(--header-text);
+     margin-right:36px;
+     font-weight: 500;
+     font-size: 16px; 
+    
+}
+
+.menu-items>ul>li a:hover{
+    background: var(--button-background);
+    border-radius: 3px;
+    transition: 150ms;
+    padding: 3px;
+    
+   
+
+}
+
+.button{
+   background: var(--button-background); 
+   color: var(--header-text);
+   font-size: 16px;
+   font-weight: 500;
+   cursor: pointer;
+   border: none;
+   padding:10px 24px;
+}
+
+.button:hover{
+    background: var(--header-text);
+    color: var(--button-background);
+    transition: 150ms;
+}
+
+.fa-arrow-right-to-bracket{
+    padding-right: 10px;
+}
+
+
+
+/*................................... title section ,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+.banner{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 86px;
+}
+.banner-title h1{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 64px;
+    margin: 0;
+}
+
+.fa-arrow-right-long{
+    padding-left: 8px;
+}
+
+.banner-image{
+    width: 556.01px;
+    height: 438px;
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+/*......................Header Ends herE .......................................*/
+
