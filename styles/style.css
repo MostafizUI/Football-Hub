@@ -6,6 +6,8 @@
     --header-background:#2D25A0 ;
     --button-background: #E02C6D;
     --header-text: #FFFFFF;
+    --article-title: #18191F;
+    --article-detail:#6C6C6C;
 
  
 }
@@ -31,16 +33,19 @@ header{
 }
 
 
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding:  40px 124px 156px;
+   
 }
 .menu-items ul{
     list-style: none;
     display: flex;
     padding: 0;
+    
 }
  .menu-items>ul>li a{
      text-decoration: none;
@@ -48,18 +53,21 @@ header{
      margin-right:36px;
      font-weight: 500;
      font-size: 16px; 
+     padding: 3px; 
+    
     
 }
 
-.menu-items>ul>li a:hover{
+ .menu-items>ul>li a:hover{
     background: var(--button-background);
     border-radius: 3px;
     transition: 150ms;
-    padding: 3px;
     
-   
 
-}
+      
+    
+
+} 
 
 .button{
    background: var(--button-background); 
@@ -83,7 +91,7 @@ header{
 
 
 
-/*................................... title section ,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+/*.................................................................................................................................................................................. title section ................................................................................................,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
 .banner{
     display: flex;
     justify-content: space-around;
@@ -110,4 +118,276 @@ header{
 }
 
 /*......................Header Ends herE .......................................*/
+
+
+/*........................ player article section .....................................*/
+
+.playerCatalog-section{
+    margin-top: 70px;
+    margin-left: 180px;
+    margin-right: 210px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.player-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+    padding: 15px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    
+}
+.player-article:hover{
+        transform: scale(1.01);
+        transition: 100ms;
+}
+
+.player-article:hover h1{
+    color: #E02C6D;
+    transition: 100ms;
+}
+
+.player-image img{
+   
+    width: 300px;
+    height: 256px;
+    border-radius: 5px;
+   
+}
+
+
+.player-information{
+    overflow: hidden;
+}
+.player-information h1{
+    width: 300px;
+    height: 40px;
+    color: #18191F;
+    font-size:28px;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+.detail{
+    width: 300px;
+    height: 105px;
+    white-space: normal;
+    color: #6C6C6C;
+   
+    font-size: 16px;
+   
+    font-weight: normal;
+   
+   
+    text-align: left;
+    overflow: hidden;
+}
+.article{
+    height: 100%;
+    margin-right: -50px; 
+    padding-right: 50px; 
+    overflow-y: scroll;
+    padding-left: 5px;
+    transition: 500ms;
+    }
+
+    
+    
+    .article:hover {
+        
+        background: #f642844a;
+        border-radius: 5px;
+    }
+
+/*------------------------------------------------------- Highlights section starts ----------------------------------------------- */
+
+
+.copa-highlights{
+     
+    margin: 225px 65px 217px 182px ;
+    
+   }
+
+   .highlights-news{
+       display: flex;
+       
+     
+   }
+
+   .highlights-info{
+       display: flex;
+       flex-direction: column;
+       
+       
+      
+       
+   }
+   .highlights-title{
+       width: 469px;
+       height: 120px;
+       padding-bottom: 65px;
+      
+       
+       
+   }
+   .highlights-title h1{
+      
+     
+      
+       font-size: 48px;
+       font-weight: bold;
+       color: #0A0826;
+           
+   }
+
+   
+   .highlights-article{
+       width: 404px;
+       height: 113px;
+       color: #6C6C6C;
+       font-style: normal;
+       font-size: 16px;
+       overflow: hidden;
+       
+      
+   }
+   
+   .article-details{
+  
+       width: 404px;
+       height: 100%;
+       margin-right: -30px;
+       padding-right: 30px;
+       overflow-y:scroll;
+   }
+
+   
+
+    .copa-image{
+       width: 567px;
+       height: 427px;
+       margin-left: 65px;
+    }
+
+    .copa-image img{
+       width: 567px;
+       height: 427px;
+    }
+
+    .watch-btn{
+        background: var(--button-background); 
+        color: var(--header-text);
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        padding:10px 24px;
+        margin-top: 24px;
+        
+    }
+    
+
+    .fa-arrow-right{
+        padding-left: 15px;
+    }
+
+   /* ....................................................... highlights section ends .................................................*/
+
+
+
+   /************************************************************* footer starts *****************************************************************/
+   .footer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+   .footer-elements{
+    width:483.87px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .footer-icons{
+    width:483.87px;
+    height: 142px;   /* footer image + social logo height combined */
+   
+ }
+ .footer-logo{
+    width: 483.87px;
+    height: 110px;
+ }
+
+ .footer-logo img{
+    width: 483.87px;
+    height: 110px;
+ }
+ .social{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .social-icons{
+     width: 170px; 
+     height: 32px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     
+
+ }
+
+ .flexible-icon{
+    width: 170px;    
+    
+     display: flex;
+     justify-content: space-around;
+     
+ }
+
+
+
+  
+
+ .icon img{
+     height: 32px;
+     width: 32px;
+ }
+
+ 
+ .copy-right{
+     width: 236px;
+     height: 31px; /*random*/
+     color: #000000;
+     font-size: 18px;
+     line-height: 24px;
+     font-weight: 400;
+     
+ }
+
 
